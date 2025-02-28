@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lol</title>
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="age-calculator.css">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.3/build/global/luxon.min.js"></script>
 </head>
 <body>
-    <h1>HELLO</h1>
-    
+    <div class="container">
+        <h2>Age Calculator</h2>
+        <form id="ageForm">
+            <label for="birthdate">Enter Your Birthdate:</label>
+            <input type="text" id="birthdate" placeholder="YYYY-MM-DD" readonly>
+            <div id="datepicker"></div>
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="age-calculator.js"></script>
 </body>
 </html>
